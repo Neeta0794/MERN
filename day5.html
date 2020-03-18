@@ -1,0 +1,80 @@
+<!--
+Bitwise Operators
+
+2 types of Bitwise
+1) Bitwise Logical
+2) Bitwise Script
+
+Object Literals
+1) if key and value are same 
+2) 
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES6 Day 5</title>
+</head>
+<body>
+    <script>
+        // Object Literals
+
+        const movieData = [
+            {
+                title : "Wolf of wall street",
+                price : 300
+            },
+            {
+                title : "Wake up sid",
+                price : 100
+            },
+            {
+                title : "ff7",
+                price : 200
+            },
+        ]
+        function MovieStore(data){
+            return {
+                data,
+                totalPrice(){
+                    return this.data.reduce((total, movies) => {
+                        return movies.price + total
+                    },0);
+                },
+                MovieDetail(title){
+                    return this.data.find(data => console.log(data.title === title));
+                }
+            };
+        }
+        const MovieCal = MovieStore(movieData);
+        MovieCal.totalPrice();
+        MovieCal.MovieDetail('ff7');
+        console.log(MovieCal.totalPrice());
+
+    </script>
+</body>
+</html>
+
+<!-- 
+Book Store
+data :
+1) Title 
+2) Author
+3) Price 
+4) Summary
+5) How many times sold out
+
+
+Output
+1) Single book detail
+2) Highest Price
+3) Lowest Price
+4) Total Book Price
+5) Highest selling Book
+6) Middle selling book 
+-->

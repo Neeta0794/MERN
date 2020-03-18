@@ -1,0 +1,31 @@
+<!-- nbm -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES6 Day 3 (Task Que)</title>
+</head>
+<body>
+    <script>
+        const posts = [
+            {id:1,content:'hello'}
+        ]
+        const comments = [
+            {postid:1,comment:'Awesome'}, 
+            {postid:3,comment:'Awesome'},
+            {postid:4,comment:'Awesome'}
+        ]
+
+        let filterout = (posts,comments) => {
+            return comments.filter(val => {
+                return val.postid === postid[0].id
+            })
+        }
+        
+        filterout(posts,comments);
+    </script>
+</body>
+</html>

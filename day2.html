@@ -1,0 +1,82 @@
+<!-- Today's Session
+
+High order array methods
+1) Filter
+2) Find
+3) Reduce
+4) Ternari Operators
+5) Fat Arrow Functions (also called Anonymous Functions) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES6 Day 2</title>
+</head>
+<body>
+    <script>
+        // ****** Filter
+        // const arr = [
+        //     {
+        //         id:1,
+        //         name:'Neeta',
+        //         age:23
+        //     },
+        //     {
+        //         id:2,
+        //         name:'Ankita',
+        //         age:22
+        //     },
+        //     {
+        //         id:3,
+        //         name:'Shivani',
+        //         age:21
+        //     }
+        // ]
+
+        // let fil = arr.filter(function(val){
+        //     return val.age > 21 && val.id === 2
+        //     console.log(val)
+        // })
+        // console.log(fil);
+
+
+        // ****** Find
+            // let finder = arr.find(function(val){
+            //     return val.name === 'Neeta'
+            // })
+            // console.log(finder)
+
+
+        // ****** Reduce
+
+        // Example 1
+        // const arr = [10,30,90]
+        // let red = arr.reduce(function(sum,val){
+        //     return sum + val
+        // }, 0);
+        // console.log(red);
+
+        // Example 2
+        // const colors = ['red','black','yellow']
+        // let red = colors.reduce(function(colors,val){
+        //     return colors + val
+        // }, ['green']);
+        // console.log(red);
+
+
+        // ****** Fat Arrow Functions
+        let a = [1,2,3,4,5]
+        let b = a.forEach((num, i) => console.log(num));
+    </script>
+</body>
+</html>
+
+<!-- 
+* Sort property
+* helper functions
+* high order methods 
+-->

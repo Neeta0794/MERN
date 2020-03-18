@@ -1,0 +1,90 @@
+<!-- ES6 Day 1 ********
+1) Let & Const [Block & Scope]
+2) High order Array methods
+    i) foreach
+    ii) Map 
+    iii) filter
+    iv) Find
+    v) reduce
+3) Rat Arrow Functions
+4) Template  Literals (Strings)-->
+    <!-- i) (`$ {}`) -->
+
+<!-- Hoisting (Interview Que) -->
+
+<!-- Const 
+1) You can change obj value in const -->
+
+<!-- 1. Only forEach can not be return -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES6 Day 1</title>
+</head>
+<body>
+    <script>
+        // const a = {
+        //     greet:'Hello ',
+        //     name:'Neeta'
+        // }
+        // function great(name) {
+        //     a.greet = 'Hola'
+        //     console.log(a.greet + name)
+        // }
+        // great('Neeta')
+
+        // console.log(a)
+        // console.log(b)
+        // console.log(c)
+        // var a = "Hello"
+        // const b = "Hola"
+        // let c = "Neeta"
+
+        // High Order Array Methods
+        // 1. forEach (can not be return)
+                // i) i (index)
+
+        // callback function
+            // let a = [1,2,3,4,5]
+            // a.forEach(function(num,i) {
+            //     console.log(num);
+            //     console.log(i);
+            // });
+
+        // 2. Map
+                // i) return is compulsory in map
+                // ii) map is used only for An Array
+
+                let a = [1,2,3,4,5]
+                let b = a.map(function(num,i){
+                  return num*2;  
+                });
+                console.log(b);
+
+
+        // 4) Template  Literals (Strings)
+        // const a = {
+        //     greet:'Hello',
+        //     name:'Neeta'
+        // }
+
+        // function greet(name) {
+        //     a.greet = 'Hola'
+        //     console.log(a.greet + name)
+        //     console.log(`${a.greet} ${name}, How are you?`)
+        // }
+        // greet('Ankita')
+    </script>
+</body>
+</html>
+
+
+<!-- 
+    1) coding with mosh
+    2) traversy 
+-->

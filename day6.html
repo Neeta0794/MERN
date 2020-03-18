@@ -1,0 +1,65 @@
+<!--
+1) Rest : Rest is used as a functional Argument (as array)
+2) Spred : Spred operator is used to spred the elements of an array
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES6 Day 6</title>
+</head>
+<body>
+    <script>
+        // let array = [1, 2, 2, 2, 'a', 'a', 'a', 7, 8];
+        // let counts = {};
+        // let mostFrequant = [];
+        // const array2 = array.forEach((data, i) => {
+        //     let word = data;
+        //     if (counts[word] == undefined){
+        //         counts[word] = 1;
+        //     } else {
+        //         counts[word] = counts[word] + 1;
+        //     }
+        //     if (mostFrequant.length <= 0) {
+        //         mostFrequant.push(counts);
+        //     }
+        // });
+        // console.log(mostFrequant);
+
+
+
+        // Spred Operator
+
+        // let colors = ['red', 'yellow', 'green']
+        // let colorshades = ['blood-red','kemon-yellow','light-green']
+        
+        // let colors1 = ['Black',...colors,...colorshades,'Blue']
+        // console.log(colors1);
+
+
+        // Rest Operator
+
+        let array = [1,2,3,4,5,6]
+        function sumOf(...numbers){
+            return numbers.reduce(sum,val => {
+                return sum + val;
+            }, 0);
+        }
+        console.log(sumOf(1,2,3,4,5,6,7,8,9,0));
+
+
+        // Rest & Spred
+        // const mathLibrary = {
+        //     product(a,b){
+        //         // return a*b;
+                
+        //     }
+        // },
+        // multiply();
+
+    </script>
+</body>
+</html>
